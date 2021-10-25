@@ -13,6 +13,7 @@ import Form from "./Form";
 import GooglePlacesAutocompleteCustom from "./GooglePlacesAutocomplete";
 import Button from "./Button";
 
+// Harvesine formula https://stackoverflow.com/a/27943/1373465
 const getDistanceFromLatLonInKm = (
   lat1: number,
   lon1: number,
@@ -64,7 +65,12 @@ export default function App() {
 
   const callBack = (userInsertedGeometry: Point) => {
     // @ts-ignore
-    const diff = getDistanceFromLatLonInKm(point?.lat, point.lng, userInsertedGeometry.lat, userInsertedGeometry.lng);
+    const diff = getDistanceFromLatLonInKm(
+      point?.lat,
+      point.lng,
+      userInsertedGeometry.lat,
+      userInsertedGeometry.lng
+    );
     Alert.alert(diff.toString());
   };
 
