@@ -1,7 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "start": ".env expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
@@ -9,16 +9,24 @@
   },
   "dependencies": {
     "expo": "~43.0.0",
+    "expo-location": "^13.0.4",
     "expo-status-bar": "~1.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-hook-form": "^7.17.5",
     "react-native": "0.64.2",
+    "react-native-dotenv": "^3.2.0",
+    "react-native-geolocation-service": "^5.3.0-beta.3",
+    "react-native-google-places-autocomplete": "^2.4.1",
+    "react-native-tailwindcss": "^1.1.11",
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "metro-react-native-babel-preset": "^0.66.2",
     "typescript": "~4.3.5"
   },
   "private": true
